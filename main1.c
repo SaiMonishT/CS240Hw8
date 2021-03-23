@@ -24,10 +24,12 @@ int main(int argc, char **argv)
         
         /* Allocate and copy the name */
         char* name = malloc(strlen(name_buff) + 1);
+        free(name);
         strcpy(name, name_buff);
         
         /* Allocate the student */
         Student_Record* new_student = malloc(sizeof(Student_Record));
+        free(new_student);
         new_student->next = NULL;
         new_student->grade = num;
         new_student->name = name;
