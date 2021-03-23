@@ -16,6 +16,7 @@ int deallocate_list(Student_Record *linked_list) {
             free(tmp);
         } //while
         
+        free(tmp);
         return 0;
     }//else
 }//method 
