@@ -9,7 +9,7 @@ int deallocate_list(Student_Record *linked_list) {
         struct Student* tmp;
         while (linked_list != NULL){
         //tmp = linked_list
-            tmp = head;
+            tmp = linked_list;
             linked_list = linked_list->next;
             free(tmp);
             free(tmp -> name);
