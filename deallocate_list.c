@@ -10,7 +10,7 @@ int deallocate_list(Student_Record *linked_list) {
     if(linked_list == NULL) {
         return -1;
     } else {
-        struct Student* tmp;
+        struct Student* tmp = malloc(sizeof(struct Student));
 
     while (linked_list != NULL)
     {
