@@ -14,7 +14,8 @@ int deallocate_list(Student_Record *linked_list) {
 
     while (linked_list != NULL)
     {
-       //tmp = linked_list;
+       //tmp = linked_list
+       free(linked_list -> name);
        linked_list = linked_list->next;
       // free(tmp);
     } //while 
