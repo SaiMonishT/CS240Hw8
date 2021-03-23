@@ -13,7 +13,7 @@ int deallocate_list(Student_Record *linked_list) {
             linked_list = linked_list->next;
             //free(tmp);
             free(tmp -> name);
-            // free(tmp);
+            free(tmp);
         } //while
         
         return 0;
