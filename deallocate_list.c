@@ -6,17 +6,16 @@ int deallocate_list(Student_Record *linked_list) {
     if(linked_list == NULL) {
         return -1;
     } else {
-        struct Student* tmp;
+        struct Student* temp;
         while (linked_list != NULL){
-        //tmp = linked_list
-            tmp = linked_list;
-            linked_list = linked_list->next;
-            //free(tmp);
-            free(tmp -> name);
-            free(tmp);
+            temp = linked_list;
+            linked_list = temp->next;
+            free(temp -> name);
+            free(temp);
+            temp = NULL;
         } //while
-        
-        free(tmp);
+
+       // free(temp);
         return 0;
     }//else
 }//method 
